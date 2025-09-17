@@ -1,8 +1,24 @@
-<iframe 
-  src="https://kinescope.io/embed/7siF4C45gzJUqoqJEsM4Jb"
-  referrerpolicy="origin"
-  width="800" 
-  height="450"
-  frameborder="0"
-  allowfullscreen>
-</iframe>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Player</title>
+    <meta name="referrer" content="origin">
+</head>
+<body>
+    <script>
+        // Устанавливаем referrer перед загрузкой iframe
+        Object.defineProperty(document, 'referrer', {
+            value: 'https://zamesin.ru/',
+            writable: false
+        });
+    </script>
+    
+    <iframe 
+        src="https://kinescope.io/embed/7siF4C45gzJUqoqJEsM4Jb"
+        width="800" 
+        height="450"
+        frameborder="0"
+        allowfullscreen>
+    </iframe>
+</body>
+</html>
